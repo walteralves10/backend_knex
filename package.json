@@ -1,0 +1,27 @@
+{
+  "name": "refazendoaprova",
+  "version": "1.0.0",
+  "description": "\"# RefazendoAProva\"",
+  "main": "index.js",
+  "dependencies": {
+    "knex": "^0.18.0",
+    "mysql": "^2.17.1",
+    "restify": "^8.3.3",
+    "restify-errors": "^8.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/walteralves10/RefazendoAProva.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/walteralves10/RefazendoAProva/issues"
+  },
+  "homepage": "https://github.com/walteralves10/RefazendoAProva#readme"
+}
