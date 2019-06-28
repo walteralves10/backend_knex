@@ -23,7 +23,7 @@ server.use(restify.plugins.queryParser());
 server.use(restify.plugins.bodyParser());
 
 //porta de acesso ou buscar pelo process onde pega a porta do servidor heroku
-const PORT = process.env.PORT || 7000;
+const PORT = process.env.PORT || 8080;
 
 server.listen(PORT, function(){
 	console.log('%s listening at %s', server.name, server.url);
