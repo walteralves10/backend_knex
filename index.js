@@ -8,10 +8,10 @@ const server = restify.createServer({
 var knex = require('knex')({
 	client:'mysql',
 	connection:{
-		host:'localhost',
-		user:'root',
-		password : '',
-    	database : 'alocar_vagas'
+		host:'us-cdbr-iron-east-02.cleardb.net',
+		user:'b8c2bb6259a631',
+		password : '6fedf47a',
+    	database : 'heroku_7deca41af8b1164'
 	}
 });
 
@@ -37,7 +37,7 @@ server.get('/', (req, res, next) => {
 	.select()
 	.then((dados) =>{
 		if(!dados) return res.send(new errs.BadRequestError('Tem algo errado senhor'));
-		res.send(dados);
+		res.send(['Escolha abaixo sua opcao de vaga: ',dados]);
 	},next)
 });
 
