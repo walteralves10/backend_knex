@@ -37,7 +37,7 @@ server.get('/', (req, res, next) => {
 	.select()
 	.then((dados) =>{
 		if(!dados) return res.send(new errs.BadRequestError('Tem algo errado senhor'));
-		res.send(['Escolha abaixo sua opcao de vaga: ',dados]);
+		res.send(['Escolha a frente sua opcao de vaga: ',dados]);
 	},next)
 });
 
